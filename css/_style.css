@@ -1,0 +1,430 @@
+@font-face {
+font-family: DINPro;
+src: url(../fonts/DINPro.otf);
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+.viewport {
+	width: 100vw;
+	height: 100vh;
+	background: url('../images/Life_is_Strange.jpg') no-repeat center center/cover;
+	box-shadow: inset 0px 100px 250px #000000, inset -120px -100px 250px #000000;
+	z-index: 1;
+}
+
+.container {
+	padding: 0 10%;
+}
+
+
+li, a, p {
+	font-family: DINPro;
+	font-weight: 400;
+	font-size: 20px;
+	color: white;
+	text-decoration: none;
+	padding: 0 1rem;
+	margin: 0;
+}
+
+
+.navbar {
+	padding: 2.5% 0;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+	align-items: center;
+	border-bottom: 1px solid #fff;
+}
+
+.wrapper {
+	display: flex;
+	align-items: center;
+}
+
+.brand img {
+	width: 12rem;
+	height: auto;
+	cursor: pointer;
+}
+
+.nav_links li {
+	display: inline-block;
+	list-style: none;
+	padding: 0 1rem;
+	text-transform: uppercase;
+}
+
+.nav_links li:hover {
+	border-bottom: 2px solid #3678A6;
+}
+
+.cta {
+	display: inline-block;
+	align-items: center;
+}
+
+.cta button {
+	padding: 0.6em 1.3em;
+	background-color: #3678A6;
+	border: none;
+	border-radius: 1.5em;
+	cursor: pointer;
+	font-family: DINPro;
+	font-size: 20px;
+	color: #fff;
+}
+
+.disabledbutton {
+	padding: 2.5% 0;
+	display: flex;
+	justify-content: flex-start;
+
+}
+
+.disabledbutton button {
+	padding: 0.6rem 1.3rem;
+	background-color: transparent;
+	border: 2px solid #FFF;
+	border-radius: 1.5rem;
+	margin-right: 1rem;
+	font-family: DINPro;
+	font-size: 20px;
+	color: #fff;
+	box-shadow: 0.05rem 0.05rem rgba(0,0,0, 0.5);
+	backdrop-filter: blur(10px);
+}
+
+.game {
+	display: flex;
+	justify-content: space-around;
+}
+
+.text {
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+
+}
+
+.title h1 {
+	flex-wrap: wrap;
+	font-family: DINPro;
+	font-family: 400;
+	font-size: 84px;
+
+	color: white;
+	text-decoration: none;
+	padding: 0;
+	margin: 0;
+}
+
+.bio p {
+	flex-wrap: wrap;
+	font-family: DINPro;
+	font-weight: 400;
+	font-size: 24px;
+
+	color: white;
+	text-decoration: none;
+	padding: 1rem 0;
+}
+
+.controller {
+	display: flex;
+	justify-content: flex-start;
+	color: #fff; 
+}
+
+.controller i {
+	padding: 0;
+	margin-right: 2rem;
+	cursor: pointer;
+}
+
+video {
+	width: 40vw;
+	height: auto;
+}
+
+
+.indent {
+	width: 10vw;
+}
+
+
+/* Ajouter au panier */
+
+.addshop {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 5% 0;
+}
+
+.addtopocket {
+	padding: 1rem 1rem;
+	background-color: #3679A6;
+	border: none;
+	color: white;
+	box-shadow: 0.15rem 0.15rem rgba(0, 0, 0, 0.5);
+	z-index: 2;
+	cursor: pointer;
+	font-family: DINPro;
+	font-size: 20px;
+	color: #fff;
+}
+
+.addtopocket:hover {
+	border-bottom: 2px solid white;
+}
+
+.addtopocket i {
+	padding-left: 0.5rem;
+}
+
+.price {
+	padding: 0.8rem 2rem;
+	background-color: transparent;
+	border: 1px solid #fff;
+	color: white;
+	z-index: 1;
+	cursor: pointer;
+	font-family: DINPro;
+	font-size: 1.25rem;
+	color: #fff;
+	backdrop-filter: blur(5px);
+}
+
+
+/* Section Footer */
+
+.sectBot {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+
+.infoSup a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	cursor: pointer;
+	font-family: DINPro;
+	font-size: 24px;
+	color: #fff;
+	padding-top: 3%;
+}
+
+.infoSup p {
+	padding: 0;
+	font-size: 1.25rem;
+}
+
+.logowrap {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding-top: 5%;
+	color: #fff;
+}
+
+.logoOS i {
+	margin-left: 1rem;
+}
+
+.viewport2 {
+	width: 100vw;
+	height: 165vh;
+	background: rgb(23,26,33);
+	background: linear-gradient(160deg, rgba(22,26,33,1) 0%, rgba(27,31,40,1) 45%, rgba(27,54,75,1) 100%);
+	box-shadow: inset 0px 100px 250px #000000, inset -120px -100px 250px #000000;
+	z-index: 2;
+}
+
+
+.abtitle p {
+	font-size: 54px;
+	font-family: DINPro;
+	font-weight: 400;
+	padding: 2.5% 0;
+}
+
+.aboutcontain {
+	display: flex;
+	justify-content: space-between;
+	
+}
+
+.carac li {
+	list-style: none;
+}
+
+.dev li {
+	list-style: none;
+}
+
+.config {
+	display: flex;
+	justify-content: space-between;
+}
+
+.configwindows {
+
+	background-color: rgba(0,0,0, 0.2);
+	height: 38vh;
+	width: 25vw;
+}
+
+.configsteam {
+
+	background-color: rgba(0,0,0, 0.2);
+	height: 38vh;
+	width: 25vw;
+}
+
+.configmac {
+
+	background-color: rgba(0,0,0, 0.2);
+	height: 38vh;
+	width: 25vw;
+}
+
+.separateconfig {
+	display: flex;
+	justify-content: space-between;
+	align-items: top;
+}
+
+.separateconfig li {
+	display: inline-block;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	font-weight: bold;
+}
+
+.separateconfig2 {
+	display: flex;
+	justify-content: left;
+	
+}
+
+.separateconfig2 li {
+	display: flex;
+	justify-content: left;
+	list-style: none;
+	font-size: 1.1rem;
+	padding: 0.2rem 0;
+}
+
+
+.contenu {
+	display: flex;
+	justify-content: space-between;
+	cursor: pointer;
+	height: 38vh;
+}
+
+.contenu h1 {
+	text-align: left;
+	font-family: DINPro;
+	font-size: 3rem;
+	color: #fff;
+	text-shadow: 1px 1px 10px 0px rgba(0,0,0,1);
+	margin: 0;
+	padding: 1rem 1rem;
+
+}
+
+.contenu p {
+	text-align: left;
+	font-family: DINPro;
+	font-size: 1.5rem;
+	color: #fff;
+	margin: 0;
+	padding: 1rem 1rem;
+
+}
+
+
+.TheWitcher {
+	background: url('../images/TheWitcher3.jpg') no-repeat center center/cover;
+	-webkit-box-shadow: 3px 7px 5px 0px rgba(0,0,0,0.5);
+	-moz-box-shadow: 3px 7px 5px 0px rgba(0,0,0,0.5);
+	box-shadow: 3px 7px 5px 0px rgba(0,0,0,0.5);
+	height: 35vh;
+	width: 100%;
+}
+.TheWitcher:hover {
+	height: 38vh;
+	width: 120%;
+}
+
+.TalesFrom {
+	background: url('../images/TalesFrom.jpg') no-repeat center center/cover;
+	-webkit-box-shadow: 3px 7px 5px 0px rgba(0,0,0,0.5);
+	-moz-box-shadow: 3px 7px 5px 0px rgba(0,0,0,0.5);
+	box-shadow: 3px 7px 5px 0px rgba(0,0,0,0.5);
+	height: 35vh;
+	width: 100%;
+}
+
+.TalesFrom:hover {
+	height: 38vh;
+	width: 120%;
+}
+
+.TWA {
+	background: url('../images/TheWolfAmong.jpg') no-repeat center center/cover;
+	-webkit-box-shadow: 3px 7px 5px 0px rgba(0,0,0,0.5);
+	-moz-box-shadow: 3px 7px 5px 0px rgba(0,0,0,0.5);
+	box-shadow: 3px 7px 5px 0px rgba(0,0,0,0.5);
+	height: 35vh;
+	width: 100%;
+}
+
+.TWA:hover {
+	height: 38vh;
+	width: 120%;
+
+}
+
+
+.flex-footer {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	align-items: center;
+	padding: 3% 0;
+	margin-top: 3%;
+	border-top: 1px solid white;
+}
+
+.social ul {
+	margin: 0;
+	padding: 0;
+}
+
+.social li {
+	display: inline-block;
+	list-style: none;
+	color: white;
+	cursor: pointer;
+}
+
+
+.mention li {
+	display: inline-block;
+	list-style: none;
+	color: white;
+	cursor: pointer;
+}

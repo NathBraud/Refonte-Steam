@@ -1,0 +1,145 @@
+</div>
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Page Produit </title>
+	<meta charset="utf-8">
+	<link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/carousel/">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>
+<body>
+  <form class="searchbar">
+    <input type="search">
+    <i class="fa fa-search"></i>
+  </form>
+  <%= image_tag("chevron.png", class: "chevron")%>
+  <div class='filters'>
+    <div class="custom-control custom-checkbox blockfiltre">
+    <div class="genre">  
+        <p>Genre</p> 
+        <input type="checkbox" class="custom-control-input" id="defaultUnchecked">
+        <label class="custom-control-label" for="defaultUnchecked">action</label><br>
+        <input type="checkbox" class="custom-control-input" id="defaultUnchecked">
+        <label class="custom-control-label" for="defaultUnchecked">aventure</label><br>
+        <input type="checkbox" class="custom-control-input" id="defaultUnchecked">
+        <label class="custom-control-label" for="defaultUnchecked">stratégie</label><br>
+      </div>
+    <div class="prix">
+        <p>prix</p>
+        <input type="checkbox" class="custom-control-input" id="defaultUnchecked">
+        <label class="custom-control-label" for="defaultUnchecked">Gratuit</label><br>
+        <input type="checkbox" class="custom-control-input" id="defaultUnchecked">
+        <label class="custom-control-label" for="defaultUnchecked">De 0 à 5 €</label><br>
+        <input type="checkbox" class="custom-control-input" id="defaultUnchecked">
+        <label class="custom-control-label" for="defaultUnchecked">Plus de 5 €</label><br>
+    </div>
+
+</div>
+  </div>
+   <section>
+          <div id="myCarousel" class=" carou carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <%= image_tag("R6.png", class: "first-slide", alt: 'raimbow6')%>
+                  <div class="container">
+                      <div class="carousel-caption text-left">
+                          <h1>A LA UNE :<br> RAIMBOW SIX SIEGE</h1>
+                          <p>Tom Clancy's Rainbow Six Siege marque le retour de la célèbre franchise de FPS <br>
+    			                dans un tout nouvel opus développé par le studio d’Ubisoft Montréal.</p>
+                          <p><a class="btn btn-lg btn-primary" href="#" role="button">JOUER</a></p>
+                      </div>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                  <%= image_tag("tombraider.png", class: "second-slide")%>
+              <div class="container">
+                  <div class="carousel-caption text-left"">
+                      <h1><strong>A LA UNE :<br> TOMBRAIDER</strong></h1>
+                      <p>Alors que Lara Croft met tout en œuvre pour sauver le monde d'une apocalypse maya, <br>
+                      elle doit suivre son destin et devenir pilleuse de tombeaux. </p>
+                      <p><a class="btn btn-lg" href="#" role="button">JOUER</a></p>
+                  </div>
+              </div>
+          </div>
+          <div class="carousel-item">
+              <%= image_tag("hunt.png", class: "third-slide")%>
+              <div class="container">
+                  <div class="carousel-caption text-left"">
+                      <h1>A LA UNE :<br> HUNT SHOWDOWN</h1>
+                      <p>Petit dernier des créateurs de Crysis, Hunt: Showdown est un jeu de chasse compétitif à la première personne,<br> alliant PvP et PvE. Situé dans les régions les plus reculées du monde, il procure les sensations d'un jeu de survie
+                      <br> dans un format compétitif. </p>
+                      <p><a class="btn btn-lg btn-primary" href="#" role="button">JOUER</a></p>
+                  </div>
+              </div>
+         </div>
+      </div>
+          <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+          </a>
+      </div>
+  </section>
+
+  <section class='library'>
+
+        	<div class="populaire classement">
+          <div class="topimage">
+        		  <h3><strong>POPULAIRES</strong></h3>
+              <h4>voir plus</h4>
+          </div>
+    		  <div class="imagehome">
+    			    <%= image_tag("planetcoaster.png")%>
+    			    <%= image_tag("tf2.png")%>
+    			    <%= image_tag("blitz.png")%>
+    		  </div>
+    	</div>
+    	<div class="gratuit classement">
+        	<div class="topimage">
+          	  <h3><strong>GRATUITS</strong></h3>
+              <h4>voir plus</h4>
+          </div>
+        	<div class="imagehome">
+        			<%= image_tag("lifeisstrange.png")%>
+        	    <%= image_tag("dota2.png")%>
+        	    <%= image_tag("marswarface.png")%>
+        	</div>
+
+    	</div>
+    	<div class="sortiedumois classement">
+          <div class="topimage">
+      		    <h3><strong>SORTIE DU MOIS</strong></h3>
+              <h4>voir plus</h4>
+          </div>
+      		<div class="imagehome">
+    	   	   	<%= image_tag("nba.png")%>
+    	 	     	<%= image_tag("depraved.png")%>
+      			  <%= image_tag("cryingsuns.png")%>
+    		  </div>
+    	</div>
+    	<div class="prochainement classement">
+          <div class="topimage">
+    		      <h3><strong>PROCHAINEMENT</strong></h3>
+              <h4>voir plus</h4>
+          </div>
+    		  <div class="imagehome">
+    			    <%= image_tag("supermonkeyball.png")%>
+    			    <%= image_tag("dbz.png")%>
+    			    <%= image_tag("noita.png")%>
+    		  </div>
+    	</div>
+	</section>
+
+</body>
+</html>
+
+
+
